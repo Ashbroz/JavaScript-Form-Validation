@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+            var name =  
+                    document.forms["RegForm"]["FirstText"]; 
+                var email =  
+                    document.forms["RegForm"]["LastText"]; 
+                var phone =  
+                    document.forms["RegForm"]["Email"];
+					 
+				if (FirstText.value == "") { 
+                    window.alert("Please enter your first name."); 
+                    name.focus(); 
+                    return false; 
+                } 
+  
+                if (LastText.value == "") { 
+                    window.alert("Please enter your last name."); 
+                    address.focus(); 
+                    return false; 
+                } 
+  
+                if (Email.value == "") { 
+                    window.alert( 
+                      "Please enter a valid e-mail address."); 
+                    email.focus(); 
+                    return false; 
+</script>
+
+<title>CrowderDev4HTML</title>
+<link rel="stylesheet" href="ACStyle.css">
+
+</head>
+<body>
+
+ <form name="RegForm" action="/submit.php" 
+          onsubmit="return Dev5()" method="post">
+
+<h1>Customer Information</h1>
+ <p>
+          <label>First Name</label>
+          <input type = "text"
+                 id = "FirstText"
+                 value = " " />
+        </p>
+<p>
+          <label>Last Name</label>
+          <input type = "text"
+                 id = "LastText"
+                 value = " " />
+        </p>
+<p>
+          <label>Email</label>
+          <input type = "text"
+                 id = "Email"
+                 value = " " />
+        </p>
+<button type="button">Sumbit</button>
+
+
+
+</form>
+
+</body>
+</html>
